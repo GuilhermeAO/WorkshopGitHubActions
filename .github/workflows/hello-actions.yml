@@ -7,9 +7,10 @@ on:
     
 jobs:
   echo_hello_actions:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
     steps:
       - name: Print Hello Actions
         run: echo Hello Actions!
-      - name: LS teste
-        run: ls -la
