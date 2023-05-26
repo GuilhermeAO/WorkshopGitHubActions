@@ -1,0 +1,13 @@
+name: Hello World WS
+
+on:
+  push:
+    branches:
+     - main
+    
+jobs:
+  echo_hello_actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello Actions
+        run: echo Hello Actions!
