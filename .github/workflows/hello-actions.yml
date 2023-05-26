@@ -11,3 +11,5 @@ jobs:
     steps:
       - name: Print Hello Actions
         run: echo Hello Actions!
+      - name: LS teste
+        run: ls -la
